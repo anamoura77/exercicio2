@@ -8,11 +8,12 @@
 <body>
     <script>
 function divisaoInteira(int1, int2) {
-    var quociente = Math.floor(int1 / int2);
-    var resto = int1 % int2;
-
-    document.write("Quociente = " + quociente + "<br>");
-    document.write("Resto = " + resto + "<br>");
+    var int1 = parseInt(prompt("digite o valor inteiro de quociente"));                                 var resto = int1 % int2;
+    var int2 = parseInt(prompt("digite o valor inteiro de resto"));
+    var resultado = int1 / int2;
+    var resto = int1%int2;
+    document.write("Quociente da divisão de 1 e 2 é" + resultado + "<br>");
+    document.write("o valor do resto da divisão de 1 por 2 é:" + resto);
 }
 
 divisaoInteira(10,3);

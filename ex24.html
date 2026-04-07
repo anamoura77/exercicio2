@@ -8,8 +8,10 @@
 <body>
     <script>
 function converterVelocidade(kmh) {
-    var ms = kmh / 3.6;
-    document.write("Velocidade em m/s = " + ms + "<br>");
+    var vel = parseInt(prompt("digite o valor da velocidade de km/h: "));
+    
+    var ms = vel / 3.6;
+    document.write("o valor de km/h é de:"  + ms.toFixed(2));
 }
 
 converterVelocidade(72);

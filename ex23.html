@@ -8,7 +8,13 @@
 <body>
     <script>
 function inverterValores(numA, numB) {
-    document.write("Ordem inversa: " + numB + " , " + numA + "<br>");
+    var numA = parseInt(prompt("digite o valor de numA:"));
+    var numB = parseInt(prompt("digite o valor de numB"));
+    var c = numA;
+    numA = numB;
+    numB = c;
+    document.write("o novo valor de numA: " + numA + "<br>");
+    document.write("o novo valor de numB:" + numB + "<br>");
 }
 
 inverterValores(5,9);
